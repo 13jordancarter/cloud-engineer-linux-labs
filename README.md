@@ -4,7 +4,7 @@ Hands-on cloud engineering lab focused on Linux system administration, AWS infra
 
 The goal of this project was to build and administer a real Linux server in AWS rather than simply work through theoretical exercises. I deployed an Amazon Linux 2023 EC2 instance, accessed and managed it remotely over SSH, configured users and permissions, deployed a web service, worked with system processes and logs, used the AWS CLI to interact with AWS resources, and intentionally introduced failures to practice diagnosing and resolving infrastructure issues.
 
-Project Overview
+Project Overview:
 
 Environment: AWS
 Operating System: Amazon Linux 2023
@@ -14,7 +14,7 @@ Automation: Bash
 AWS Management: AWS CLI
 Version Control: Git / GitHub
 
-Key Areas Covered
+Key Areas Covered:
 
 Linux server administration
 AWS EC2 deployment and configuration
