@@ -15,6 +15,7 @@ AWS Management: AWS CLI
 Version Control: Git / GitHub
 
 Key Areas Covered
+
 Linux server administration
 AWS EC2 deployment and configuration
 SSH remote administration
@@ -67,6 +68,7 @@ Local Workstation
       └── Git ────────────────────► GitHub
       
 What I Built
+
 1. AWS EC2 Linux Server
 
 Deployed an Amazon Linux 2023 EC2 instance to serve as the administration and troubleshooting environment.
@@ -80,6 +82,7 @@ SSH access restricted to my IP address
 HTTP access for the web server
 
 This provided a practical environment for connecting AWS infrastructure concepts with Linux system administration.
+
 
 2. Remote Linux Administration
 
@@ -98,6 +101,7 @@ Memory usage
 CPU information
 
 The focus was on becoming comfortable investigating an unfamiliar Linux server before making changes.
+
 
 3. Linux Users, Groups & Permissions
 
@@ -123,6 +127,7 @@ chown
 Permission verification with ls -l
 
 The goal was to understand why a user can or cannot access a resource rather than relying on memorized permission values.
+
 
 4. nginx Web Server
 
@@ -151,7 +156,9 @@ Linux
 nginx
    ↓
 HTML
+
 5. Processes & Service Management
+
 
 Investigated running Linux processes and the nginx service using tools such as:
 
@@ -175,6 +182,7 @@ I also tested service availability from the client side by stopping nginx and ve
 
 6. Logs & System Investigation
 
+
 Used Linux logging tools to investigate system and application activity.
 
 Tools included:
@@ -189,6 +197,7 @@ Generated HTTP traffic against the nginx server and then examined the logs to id
 I also explored system, service, and SSH-related logs to build familiarity with the information available when troubleshooting a Linux server.
 
 7. AWS CLI
+
 
 Used the AWS CLI from my local workstation to interact with AWS without relying exclusively on the management console.
 
@@ -212,29 +221,8 @@ AWS CLI credentials were kept on the workstation rather than permanently configu
 
 8. Bash Automation
 
+
 Created a simple Bash script to collect useful information from the Linux server.
-
-Example output:
-
-=== SERVER REPORT ===
-
-Hostname:
-ip-10-0-1-15
-
-Current User:
-ec2-user
-
-Disk Usage:
-...
-
-Memory:
-...
-
-Running nginx:
-Yes
-
-Current Date:
-...
 
 The script provided hands-on practice with:
 
@@ -244,11 +232,13 @@ Linux commands
 Command output
 Conditional logic
 Basic automation
-Troubleshooting Exercises
+
+
+9. Troubleshooting Exercises
 
 A major part of this project was intentionally breaking working components and troubleshooting them without immediately following a tutorial.
 
-nginx Outage
+A) nginx Outage
 
 Stopped the nginx service and approached the problem as if the outage were unexpected.
 
@@ -268,7 +258,7 @@ Restore service
 
 This reinforced the importance of troubleshooting from the infrastructure layer upward rather than assuming the application is always the problem.
 
-Security Group / Network Outage
+B) Security Group / Network Outage
 
 Changed the HTTP Security Group configuration and investigated why the website was no longer reachable.
 
@@ -282,17 +272,7 @@ nginx
 
 This exercise helped reinforce the distinction between network connectivity problems and application/service problems.
 
-Linux Permission Issue
 
-Removed the appropriate group access from the project directory and attempted to modify files using a test account.
-
-After receiving:
-
-Permission denied
-
-I investigated the directory ownership and permissions and restored the appropriate access.
-
-This provided practical experience diagnosing Linux authorization issues instead of treating permissions as a purely theoretical topic.
 
 Repository Structure
 cloud-engineer-linux-labs/
@@ -351,5 +331,5 @@ CI/CD integration
 Containerizing the web application
 Building the environment from scratch using Terraform
 
-Status: Completed hands-on Linux/AWS administration lab
+
 Focus: Cloud Engineering • Linux • AWS • Automation • Troubleshooting
