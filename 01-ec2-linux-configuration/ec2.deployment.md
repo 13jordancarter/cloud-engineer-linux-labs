@@ -1,0 +1,1 @@
+Created an EC2 instance from the GUI. Has specs of t3small to host a small basic web server with 50 GB gp SSD. Has a public IP so I can access the instance with the access keys over OpenSSH. I also created a new security group for it allowing SSH access from only my local IP.
