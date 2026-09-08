@@ -3,10 +3,18 @@ For this step, I was able to simulate creating two new employee accounts Cam and
 Commands used:
 
 Creating group: sudo group add cloudengineer
+
 Creating user and assigning primary group: useradd -g cloudengineer cam
+
 Create password: sudo passwd cam
+
 Verify membership: id cam
+
 Examine home directories: sudo ls -la /home/cam
+
 Determine Permissions: sudo ls -ld /home/cam
+
 Update Permissions for personal items to RWX and group items to read only: sudo chmod 740 /home/ward
+
 Remove user from primary cloudengineer group and add to users group: sudo usermod -g users ward
+
