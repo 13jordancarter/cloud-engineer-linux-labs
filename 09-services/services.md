@@ -3,7 +3,11 @@ For this step, I was able to use the systemctl command to check and modify the n
 Commands used:
 
 Check service status: sudo systemctl status nginx
+
 Stop service: sudo systemctl stop nginx
+
 Start service: sudo systemctl start nginx
+
 Restart a service: sudo sysemctl restart nginx
+
 Determine automatic start on reboot: systemctl is-enabled nginx
