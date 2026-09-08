@@ -3,8 +3,13 @@
 Commands user:
 
 Make Directory: mkdir cloudproject
+
 Make file : touch file1.txt
+
 Change group ownership: sudo chgrp -R cloudengineer /cloudproject
+
 Setgid: sudo chmod -R g+s /cloudproject
+
 Set correct permissions: sudo chmod -R 770 /cloudproject
+
 Verify permissions: ls -ld /cloudproject
