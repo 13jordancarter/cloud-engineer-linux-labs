@@ -3,8 +3,13 @@ In this step, I was able to use nginx to run a basic HTML webpage displaying tex
 Commands used:
 
 Edit the index.html file: sudo vi /usr/share/nginx/html/index.html
+
 Set ownership  of file: sudo chown -R root:nginx /usr/share/nginx/html
+
 Set permissions of file: sudo chmod -R 755 /usr/share/nginx/html
+
 Restart nginx: sudo systemctl restart nginx
+
 Enable nginx: sudo systemctl enable nginx
+
 Verify nginx is running: sudo systemctl status nginx
