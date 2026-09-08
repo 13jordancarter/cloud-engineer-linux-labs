@@ -3,12 +3,21 @@ In this step, I was able to examine logs on the local machine the webserver is b
 Commands used:
 
 Access logs in real-time: sudo tail -f /var/log/nginx/access.log
+
 Access the last 20 lines of error log: sudo tail -20 /var/log/nginx/error.log
+
 View all system logs: journalctl
+
 View last 50 lines of system logs: journalctl -n 50
+
 Nginx logs via journalctl: journalctl -u nginx
+
 Check services status and recent logs in one command: systemctl status nginx
+
 All SSh logs: journalctl -u sshd
+
 Failed login attempts only: journalctl -u sshd | grep "Failed password"
+
 Last hour of SSH activity: journalctl -u sshd --since -1h
+
 How many failed attempts in the last 24 hours: journalctl -u sshd --since -24h | grep -c "Failed"
