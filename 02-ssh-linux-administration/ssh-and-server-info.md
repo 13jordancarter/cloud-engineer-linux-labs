@@ -3,9 +3,15 @@ I then was able to SSH into my ec2 server. I had to enable port 22 from 0.0.0.0/
 I then was able to determine specs about the server from the command line such as:
 
 Private IP - ifconfig
+
 Public IP - curl ifconfig.me
+
 Linux Distro-Version - cat /etc/os-release
+
 Current Directory - pwd
+
 Disk Space - df -h
+
 Memory - free -h
+
 CPU information - lscpu
